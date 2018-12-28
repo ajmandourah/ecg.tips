@@ -27,10 +27,8 @@
     <!-- css -->
     <link href="css/style.css" rel="stylesheet" type="text/css">
     <link href="less/bare.less" rel="stylesheet/less" type="text/css">
-    <link href="css/light-border.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Tajawal:500" rel="stylesheet">
-    <link rel="stylesheet" href="css/magnific-popup.css" type="text/css">
-    
+
 
     <style>
         @font-face {
@@ -62,7 +60,7 @@
             <h1 style="color: #fff">دليلك للتخطيط القلبي</h1>
             <p fs="xs" style="color: #fff">موقع يهتم بتبسيط أساسيات التخطيط القلبي بلغة سهلة وأسلوب واضح</p>
             <div class="start-btn">
-            <a href="#parts" class="btn" fs="xl">ابدأ الآن</a>
+                <a href="#parts" class="btn" fs="xl">ابدأ الآن</a>
             </div>
         </div>
     </div>
@@ -766,20 +764,20 @@
             });
             */
 
-            $('.box').magnificPopup({
-                type: 'image',
-                mainClass: 'mfp-with-zoom',
-                zoom: {
-                    enabled: true, // By default it's false, so don't forget to enable it
+            // $('.box').magnificPopup({
+            //     type: 'image',
+            //     mainClass: 'mfp-with-zoom',
+            //     zoom: {
+            //         enabled: true, // By default it's false, so don't forget to enable it
 
-                    duration: 300, // duration of the effect, in milliseconds
-                    easing: 'ease-in-out', // CSS transition easing function
-                    opener: function (openerElement) {
-                        return openerElement.is('img') ? openerElement : openerElement.find('img');
-                    }
-                }
+            //         duration: 300, // duration of the effect, in milliseconds
+            //         easing: 'ease-in-out', // CSS transition easing function
+            //         opener: function (openerElement) {
+            //             return openerElement.is('img') ? openerElement : openerElement.find('img');
+            //         }
+            //     }
 
-            });
+            // });
 
 
             var d = new Date();
