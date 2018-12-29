@@ -1,7 +1,9 @@
 html {
     scroll-behavior: smooth;
 }
-
+body{ 
+    margin: 0 auto;
+}
 @font-face {
     font-family: "Flat";
     src: url('font/JF-Flat-regular.eot');
