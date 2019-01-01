@@ -30,10 +30,7 @@ ul, li {
 }
 
 .main {
-  background-color: #130d35;
-  background-image: -webkit-gradient(linear, left top, right top, from(#130d35), to(#232875));
-  background-image: linear-gradient(to right, #130d35, #232875);
-  background-image: -moz-linear-gradient(to right, #130d35, #232875);
+  background-color: #F9F6FB;
   height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -44,6 +41,10 @@ ul, li {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.main img {
+  margin-top: 1rem;
 }
 
 .main-content {
