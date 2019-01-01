@@ -43,14 +43,6 @@ ul, li {
           align-items: center;
 }
 
-.main img {
-  margin-top: 1rem;
-}
-
-.main-content {
-  margin: 1rem;
-}
-
 .start-btn {
   position: relative;
   /*background-color: white;*/
