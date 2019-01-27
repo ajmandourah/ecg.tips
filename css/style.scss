@@ -28,10 +28,10 @@ ul, li{
     font-family: 'Tajawal';
 }
 .main{
-    background-color:  #F9F6FB;
-    // background-image: linear-gradient(to right, rgb(19, 13, 53) , rgb(35, 40, 117));
-    // background-image: -webkit-linear-gradient(to right, rgb(19, 13, 53) , rgb(35, 40, 117));
-    // background-image: -moz-linear-gradient(to right, rgb(19, 13, 53) , rgb(35, 40, 117));
+    //background-color:  #F9F6FB;
+    background-image: linear-gradient(to right, rgb(19, 13, 53) , rgb(35, 40, 117));
+    background-image: -webkit-linear-gradient(to right, rgb(19, 13, 53) , rgb(35, 40, 117));
+    background-image: -moz-linear-gradient(to right, rgb(19, 13, 53) , rgb(35, 40, 117));
     height: 100vh;
     display: flex;
    justify-content: center;
