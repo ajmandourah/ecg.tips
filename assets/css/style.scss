@@ -199,6 +199,7 @@ h1, h2, h3, h4, h5, h6 {
     }
     padding: 16px 40px;
     span {
+        opacity: 0.5;
         position: absolute;
         right: 50%;
         top: 50%;
@@ -207,7 +208,7 @@ h1, h2, h3, h4, h5, h6 {
         height: 100%;
         border-radius: 50%;
         background-color: $black-color;
-        transition: width 0.3s ease-in-out, height 0.5s ease-in-out;
+        transition: all 0.3s ease-in-out, height 0.5s ease-in-out;
         transform: translate(50%, -50%);
         z-index: -1;
         border-radius: 5px;
@@ -215,6 +216,7 @@ h1, h2, h3, h4, h5, h6 {
     &:hover {
         color: $white-color;
         span {
+            opacity: 1;
             width: 225%;
             height: 562.5px;
         }
