@@ -56,7 +56,12 @@ $paragraph-color: #646464;
 $font-size: 16px;
 $transition: .5s;
 
+.socialshare{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
 
+}
 code{
     font-weight: bold;
     font-family: 'Tajawal';
