@@ -44,6 +44,60 @@ Default CSS
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,423;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,423;1,500;1,600;1,700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Cairo:wght@600&family=Tajawal:wght@500&display=swap");
+.secondary-btn {
+  border: 2px solid #110c25;
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  overflow: hidden;
+  z-index: 1;
+  color: #110c25;
+  text-transform: capitalize;
+  background-color: white;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  border-radius: 10px;
+  font-weight: 400;
+  font-size: 18px;
+  padding: 10px 40px;
+}
+
+.secondary-btn span {
+  opacity: 0.5;
+  position: absolute;
+  right: 50%;
+  top: 50%;
+  display: block;
+  width: 0;
+  height: 100%;
+  border-radius: 50%;
+  background-color: #110c25;
+  -webkit-transition: all 0.3s ease-in-out, height 0.5s ease-in-out;
+  transition: all 0.3s ease-in-out, height 0.5s ease-in-out;
+  -webkit-transform: translate(50%, -50%);
+          transform: translate(50%, -50%);
+  z-index: -1;
+  border-radius: 5px;
+}
+
+.secondary-btn:hover {
+  color: #ffffff;
+}
+
+.secondary-btn:hover span {
+  opacity: 1;
+  width: 225%;
+  height: 562.5px;
+}
+
+.secondary-btn i {
+  font-size: 14px;
+  line-height: normal;
+  margin-left: 4px;
+  position: relative;
+  top: 1px;
+}
+
 .socialshare {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -58,11 +112,11 @@ Default CSS
 
 code {
   font-weight: bold;
-  font-family: 'Tajawal';
+  font-family: "Tajawal";
 }
 
 mark {
-  color: #3B3B3B;
+  color: #3b3b3b;
   background-color: #f7efad;
 }
 
@@ -81,7 +135,7 @@ body {
 a {
   -webkit-transition: 0.5s;
   transition: 0.5s;
-  color: #3B3B3B;
+  color: #3b3b3b;
 }
 
 a:hover, a:focus {
@@ -90,7 +144,8 @@ a:hover, a:focus {
   outline: 0;
 }
 
-button:focus, input:focus {
+button:focus,
+input:focus {
   outline: 0;
 }
 
@@ -120,8 +175,13 @@ img {
   height: auto;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  color: #3B3B3B;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #3b3b3b;
   font-weight: bold;
   text-transform: capitalize;
 }
@@ -170,7 +230,7 @@ h1, h2, h3, h4, h5, h6 {
   width: 0;
   height: 100%;
   border-radius: 50%;
-  background-color: #3B3B3B;
+  background-color: #3b3b3b;
   -webkit-transition: all 0.3s ease-in-out, height 0.5s ease-in-out;
   transition: all 0.3s ease-in-out, height 0.5s ease-in-out;
   -webkit-transform: translate(50%, -50%);
@@ -226,7 +286,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .section-title .bar::before {
-  content: '';
+  content: "";
   position: absolute;
   left: 0;
   top: 0;
@@ -383,7 +443,7 @@ Navbar Area CSS
 
 .navbar-light .navbar-nav .nav-item a {
   font-size: 18px;
-  color: #3B3B3B;
+  color: #3b3b3b;
   text-transform: capitalize;
   position: relative;
   padding-left: 0;
@@ -426,7 +486,7 @@ Navbar Area CSS
 }
 
 .navbar-light .others-option .option-item {
-  color: #3B3B3B;
+  color: #3b3b3b;
   display: inline-block;
   position: relative;
   line-height: 1;
@@ -436,7 +496,7 @@ Navbar Area CSS
   cursor: pointer;
   -webkit-transition: 0.5s;
   transition: 0.5s;
-  color: #3B3B3B;
+  color: #3b3b3b;
   font-size: 20px;
   font-weight: 600;
 }
@@ -447,7 +507,7 @@ Navbar Area CSS
   -webkit-transition: 0.5s;
   transition: 0.5s;
   width: 20px;
-  color: #3B3B3B;
+  color: #3b3b3b;
   font-size: 18px;
 }
 
@@ -477,7 +537,7 @@ Banner Area CSS
 
 .main-banner .banner-content h1 {
   font-size: 65px;
-  color: #3B3B3B;
+  color: #3b3b3b;
   margin: 0 0 10px 0;
   line-height: 1.3;
 }
@@ -915,7 +975,7 @@ Fun Facts Area CSS
 }
 
 .single-fun-fact::before {
-  content: '';
+  content: "";
   position: absolute;
   left: 0;
   top: 0;
@@ -977,7 +1037,7 @@ About Area CSS
 }
 
 .about-content .bar::before {
-  content: '';
+  content: "";
   position: absolute;
   left: 0;
   top: 0;
@@ -1100,7 +1160,7 @@ Screenshot Area CSS
 }
 
 .screenshot-area::before {
-  content: '';
+  content: "";
   position: absolute;
   left: 0;
   top: 0;
@@ -1108,7 +1168,7 @@ Screenshot Area CSS
   width: 100%;
   height: 100%;
   background: #000000;
-  opacity: .77;
+  opacity: 0.77;
 }
 
 .screenshot-area .section-title h2 {
@@ -1139,7 +1199,7 @@ Screenshot Area CSS
 }
 
 .screenshot-slider.owl-theme .owl-dots .owl-dot span::before {
-  content: '';
+  content: "";
   position: absolute;
   left: 0;
   top: 0;
@@ -1267,7 +1327,8 @@ Testimonial Area CSS
           transform: scale(1);
 }
 
-.testimonial-slides .next-arrow, .testimonial-slides .prev-arrow {
+.testimonial-slides .next-arrow,
+.testimonial-slides .prev-arrow {
   position: absolute;
   cursor: pointer;
   top: 50%;
@@ -1286,7 +1347,8 @@ Testimonial Area CSS
   visibility: hidden;
 }
 
-.testimonial-slides .next-arrow:hover, .testimonial-slides .prev-arrow:hover {
+.testimonial-slides .next-arrow:hover,
+.testimonial-slides .prev-arrow:hover {
   color: #672fea;
 }
 
@@ -1298,7 +1360,8 @@ Testimonial Area CSS
   left: -20px;
 }
 
-.testimonial-slides:hover .next-arrow, .testimonial-slides:hover .prev-arrow {
+.testimonial-slides:hover .next-arrow,
+.testimonial-slides:hover .prev-arrow {
   opacity: 1;
   visibility: visible;
 }
@@ -1340,7 +1403,7 @@ Overview Area CSS
 }
 
 .overview-content .bar::before {
-  content: '';
+  content: "";
   position: absolute;
   left: 0;
   top: 0;
@@ -1406,7 +1469,7 @@ Pricing Area CSS
   border-bottom: 1px dashed #f3f3f3;
   font-size: 50px;
   font-weight: bold;
-  color: #3B3B3B;
+  color: #3b3b3b;
   transition: 0.5s;
 }
 
@@ -1416,12 +1479,12 @@ Pricing Area CSS
   font-weight: bold;
   -webkit-transition: 0.5s;
   transition: 0.5s;
-  color: #3B3B3B;
+  color: #3b3b3b;
 }
 
 .single-pricing-table .price sub {
   bottom: 2px;
-  color: #3B3B3B;
+  color: #3b3b3b;
   font-size: 18px;
   font-weight: 600;
   -webkit-transition: 0.5s;
@@ -1441,7 +1504,7 @@ Pricing Area CSS
 .single-pricing-table .pricing-features li {
   margin-bottom: 10px;
   position: relative;
-  color: #3B3B3B;
+  color: #3b3b3b;
   font-size: 16px;
   font-weight: 600;
   -webkit-transition: 0.5s;
@@ -1515,7 +1578,7 @@ Pricing Area CSS
   background-color: #ffffff;
   -webkit-box-shadow: 0 0 1.25rem rgba(108, 118, 134, 0.1);
           box-shadow: 0 0 1.25rem rgba(108, 118, 134, 0.1);
-  color: #3B3B3B;
+  color: #3b3b3b;
   padding: 14px 30px;
   position: relative;
   font-size: 18px;
@@ -1565,7 +1628,7 @@ Faq Area CSS
 
 .faq-accordion-content .accordion .accordion-title {
   padding: 18px 20px 18px 55px;
-  color: #3B3B3B;
+  color: #3b3b3b;
   position: relative;
   border-bottom: 1px solid transparent;
   margin-bottom: -1px;
@@ -1733,7 +1796,7 @@ Team Area CSS
 .single-team .image .content h3 {
   margin-bottom: 5px;
   font-size: 28px;
-  color: #3B3B3B;
+  color: #3b3b3b;
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
@@ -1778,7 +1841,7 @@ App Download Area CSS
 }
 
 .app-download::before {
-  content: '';
+  content: "";
   position: absolute;
   left: 0;
   top: 0;
@@ -1786,7 +1849,7 @@ App Download Area CSS
   width: 100%;
   height: 100%;
   background: #000000;
-  opacity: .77;
+  opacity: 0.77;
 }
 
 .app-download-content {
@@ -1812,7 +1875,7 @@ App Download Area CSS
 }
 
 .app-download-content .bar::before {
-  content: '';
+  content: "";
   position: absolute;
   left: 0;
   top: 0;
@@ -1900,7 +1963,7 @@ Blog Area CSS
 }
 
 .single-blog .content h3 a {
-  color: #3B3B3B;
+  color: #3b3b3b;
 }
 
 .single-blog .content p {
@@ -1991,7 +2054,7 @@ Contact Area CSS
   height: 55px;
   padding: 0 15px;
   line-height: initial;
-  color: #3B3B3B;
+  color: #3b3b3b;
   background-color: transparent;
   border: 1px solid #cecfdf;
   border-radius: 5px;
@@ -2075,11 +2138,11 @@ Contact Area CSS
 }
 
 .contact-info .contact-info-content h2 a:hover {
-  color: #3B3B3B;
+  color: #3b3b3b;
 }
 
 .contact-info .contact-info-content h2 a:not(:first-child) {
-  color: #3B3B3B;
+  color: #3b3b3b;
 }
 
 .contact-info .contact-info-content h2 a:not(:first-child):hover {
@@ -2147,7 +2210,7 @@ Subscribe Area CSS
 }
 
 .subscribe-area::before {
-  content: '';
+  content: "";
   position: absolute;
   left: 0;
   top: 0;
@@ -2155,7 +2218,7 @@ Subscribe Area CSS
   width: 100%;
   height: 100%;
   background: #000000;
-  opacity: .77;
+  opacity: 0.77;
 }
 
 .subscribe-content h2 {
@@ -2181,7 +2244,7 @@ Subscribe Area CSS
   padding-left: 25px;
   border-radius: 5px;
   outline: 0;
-  color: #3B3B3B;
+  color: #3b3b3b;
 }
 
 .newsletter-form .input-newsletter::-webkit-input-placeholder {
@@ -2220,7 +2283,7 @@ Subscribe Area CSS
 }
 
 .newsletter-form button:hover {
-  background-color: #3B3B3B;
+  background-color: #3b3b3b;
   color: #ffffff;
 }
 
@@ -2247,7 +2310,7 @@ Banner Area Two CSS
 }
 
 .main-banner-two::before {
-  content: '';
+  content: "";
   position: absolute;
   left: 0;
   top: 0;
@@ -2255,7 +2318,7 @@ Banner Area Two CSS
   width: 100%;
   height: 100%;
   background: #000000;
-  opacity: .77;
+  opacity: 0.77;
 }
 
 .main-banner-two .banner-content {
@@ -2292,7 +2355,7 @@ Banner Area Two CSS
   padding-left: 25px;
   border-radius: 5px;
   outline: 0;
-  color: #3B3B3B;
+  color: #3b3b3b;
 }
 
 .main-banner-two .banner-content .banner-form .input-newsletter::-webkit-input-placeholder {
@@ -2331,7 +2394,7 @@ Banner Area Two CSS
 }
 
 .main-banner-two .banner-content .banner-form button:hover {
-  background-color: #3B3B3B;
+  background-color: #3b3b3b;
   color: #ffffff;
 }
 
@@ -2369,7 +2432,7 @@ Video Area CSS
 }
 
 .video-content::before {
-  content: '';
+  content: "";
   position: absolute;
   left: 0;
   top: 0;
@@ -2406,7 +2469,7 @@ Video Area CSS
 }
 
 .video-content .video-btn::after {
-  content: '';
+  content: "";
   display: block;
   position: absolute;
   top: 0;
@@ -2421,7 +2484,7 @@ Video Area CSS
 }
 
 .video-content .video-btn::before {
-  content: '';
+  content: "";
   display: block;
   position: absolute;
   top: 0;
@@ -2435,7 +2498,8 @@ Video Area CSS
   animation: ripple 2s linear infinite;
 }
 
-.video-content .video-btn:hover, .video-content .video-btn .video-content .video-btn:focus {
+.video-content .video-btn:hover,
+.video-content .video-btn .video-content .video-btn:focus {
   background-color: #672fea;
   color: #ffffff;
 }
@@ -2496,7 +2560,7 @@ Page Title Area CSS
 
 .page-title-content h2 {
   margin-bottom: 0;
-  color: #3B3B3B;
+  color: #3b3b3b;
   font-size: 50px;
 }
 
@@ -2508,7 +2572,7 @@ Page Title Area CSS
 }
 
 .page-title-content ul li {
-  color: #3B3B3B;
+  color: #3b3b3b;
   display: inline-block;
   position: relative;
   font-weight: 400;
@@ -2519,7 +2583,7 @@ Page Title Area CSS
 
 .page-title-content ul li a {
   display: inline-block;
-  color: #3B3B3B;
+  color: #3b3b3b;
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
@@ -2529,7 +2593,7 @@ Page Title Area CSS
 }
 
 .page-title-content ul li::before {
-  content: '';
+  content: "";
   position: absolute;
   right: -15px;
   top: 11px;
@@ -2557,7 +2621,7 @@ Pagination Area CSS
   display: inline-block;
   background-color: #ffffff;
   line-height: 48px;
-  color: #3B3B3B;
+  color: #3b3b3b;
   -webkit-box-shadow: 0 2px 10px 0 #d8dde6;
           box-shadow: 0 2px 10px 0 #d8dde6;
   font-size: 18px;
@@ -2591,14 +2655,14 @@ Blog Details Area CSS
 .blog-details-desc .article-content .entry-meta ul li {
   position: relative;
   display: inline-block;
-  color: #3B3B3B;
+  color: #3b3b3b;
   margin-right: 21px;
   font-family: "Cairo";
 }
 
 .blog-details-desc .article-content .entry-meta ul li span {
   display: inline-block;
-  color: #3B3B3B;
+  color: #3b3b3b;
   font-weight: 500;
 }
 
@@ -2617,7 +2681,7 @@ Blog Details Area CSS
 }
 
 .blog-details-desc .article-content .entry-meta ul li::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 12px;
   right: -15px;
@@ -2727,7 +2791,7 @@ Blog Details Area CSS
 
 .blog-details-desc .article-footer .article-tags span {
   display: inline-block;
-  color: #3B3B3B;
+  color: #3b3b3b;
   font-size: 20px;
   margin-right: 5px;
   position: relative;
@@ -2789,7 +2853,8 @@ Blog Details Area CSS
           transform: translateY(-2px);
 }
 
-blockquote, .blockquote {
+blockquote,
+.blockquote {
   overflow: hidden;
   background-color: #fafafa;
   padding: 50px !important;
@@ -2800,8 +2865,9 @@ blockquote, .blockquote {
   margin-top: 20px;
 }
 
-blockquote p, .blockquote p {
-  color: #3B3B3B;
+blockquote p,
+.blockquote p {
+  color: #3b3b3b;
   line-height: 1.6;
   margin-bottom: 0;
   font-style: italic;
@@ -2809,12 +2875,14 @@ blockquote p, .blockquote p {
   font-size: 24px !important;
 }
 
-blockquote cite, .blockquote cite {
+blockquote cite,
+.blockquote cite {
   display: none;
 }
 
-blockquote::after, .blockquote::after {
-  content: '';
+blockquote::after,
+.blockquote::after {
+  content: "";
   position: absolute;
   left: 0;
   top: 0;
@@ -2897,7 +2965,8 @@ blockquote::after, .blockquote::after {
   font-size: 30px;
 }
 
-.comments-area ol, .comments-area ul {
+.comments-area ol,
+.comments-area ul {
   padding: 0;
   margin: 0;
   list-style-type: none;
@@ -2912,7 +2981,7 @@ blockquote::after, .blockquote::after {
 .comments-area .comment-body {
   border-bottom: 1px solid #eeeeee;
   padding-left: 115px;
-  color: #3B3B3B;
+  color: #3b3b3b;
   font-size: 14px;
   margin-bottom: 20px;
   padding-bottom: 20px;
@@ -2924,7 +2993,7 @@ blockquote::after, .blockquote::after {
 
 .comments-area .comment-body .reply a {
   border: 1px solid #ded9d9;
-  color: #3B3B3B;
+  color: #3b3b3b;
   display: inline-block;
   padding: 5px 20px;
   border-radius: 30px;
@@ -2966,7 +3035,7 @@ blockquote::after, .blockquote::after {
 }
 
 .comments-area .comment-metadata {
-  margin-bottom: .8em;
+  margin-bottom: 0.8em;
   color: #646464;
   letter-spacing: 0.01em;
   font-family: "Cairo";
@@ -3014,11 +3083,23 @@ blockquote::after, .blockquote::after {
 .comments-area .comment-respond label {
   display: block;
   font-weight: 400;
-  color: #3B3B3B;
+  color: #3b3b3b;
   margin-bottom: 5px;
 }
 
-.comments-area .comment-respond input[type="date"], .comments-area .comment-respond input[type="time"], .comments-area .comment-respond input[type="datetime-local"], .comments-area .comment-respond input[type="week"], .comments-area .comment-respond input[type="month"], .comments-area .comment-respond input[type="text"], .comments-area .comment-respond input[type="email"], .comments-area .comment-respond input[type="url"], .comments-area .comment-respond input[type="password"], .comments-area .comment-respond input[type="search"], .comments-area .comment-respond input[type="tel"], .comments-area .comment-respond input[type="number"], .comments-area .comment-respond textarea {
+.comments-area .comment-respond input[type="date"],
+.comments-area .comment-respond input[type="time"],
+.comments-area .comment-respond input[type="datetime-local"],
+.comments-area .comment-respond input[type="week"],
+.comments-area .comment-respond input[type="month"],
+.comments-area .comment-respond input[type="text"],
+.comments-area .comment-respond input[type="email"],
+.comments-area .comment-respond input[type="url"],
+.comments-area .comment-respond input[type="password"],
+.comments-area .comment-respond input[type="search"],
+.comments-area .comment-respond input[type="tel"],
+.comments-area .comment-respond input[type="number"],
+.comments-area .comment-respond textarea {
   display: block;
   width: 100%;
   background-color: #ffffff;
@@ -3029,7 +3110,19 @@ blockquote::after, .blockquote::after {
   transition: 0.5s;
 }
 
-.comments-area .comment-respond input[type="date"]:focus, .comments-area .comment-respond input[type="time"]:focus, .comments-area .comment-respond input[type="datetime-local"]:focus, .comments-area .comment-respond input[type="week"]:focus, .comments-area .comment-respond input[type="month"]:focus, .comments-area .comment-respond input[type="text"]:focus, .comments-area .comment-respond input[type="email"]:focus, .comments-area .comment-respond input[type="url"]:focus, .comments-area .comment-respond input[type="password"]:focus, .comments-area .comment-respond input[type="search"]:focus, .comments-area .comment-respond input[type="tel"]:focus, .comments-area .comment-respond input[type="number"]:focus, .comments-area .comment-respond textarea:focus {
+.comments-area .comment-respond input[type="date"]:focus,
+.comments-area .comment-respond input[type="time"]:focus,
+.comments-area .comment-respond input[type="datetime-local"]:focus,
+.comments-area .comment-respond input[type="week"]:focus,
+.comments-area .comment-respond input[type="month"]:focus,
+.comments-area .comment-respond input[type="text"]:focus,
+.comments-area .comment-respond input[type="email"]:focus,
+.comments-area .comment-respond input[type="url"]:focus,
+.comments-area .comment-respond input[type="password"]:focus,
+.comments-area .comment-respond input[type="search"]:focus,
+.comments-area .comment-respond input[type="tel"]:focus,
+.comments-area .comment-respond input[type="number"]:focus,
+.comments-area .comment-respond textarea:focus {
   border-color: #672fea;
 }
 
@@ -3099,7 +3192,7 @@ blockquote::after, .blockquote::after {
 
 .comments-area .comment-respond .form-submit input:hover, .comments-area .comment-respond .form-submit input:focus {
   color: #ffffff;
-  background-color: #3B3B3B;
+  background-color: #3b3b3b;
 }
 
 /*================================================
@@ -3123,7 +3216,7 @@ Sidebar Widget Area CSS
 }
 
 .widget-area .widget .widget-title::before {
-  content: '';
+  content: "";
   position: absolute;
   background: #672fea;
   bottom: -1px;
@@ -3184,7 +3277,7 @@ Sidebar Widget Area CSS
 }
 
 .widget-area .widget_search form button:hover {
-  background-color: #3B3B3B;
+  background-color: #3b3b3b;
   color: #ffffff;
 }
 
@@ -3282,7 +3375,7 @@ Sidebar Widget Area CSS
   background: #672fea;
   height: 8px;
   width: 8px;
-  content: '';
+  content: "";
   left: 0;
   top: 8px;
   position: absolute;
@@ -3290,7 +3383,7 @@ Sidebar Widget Area CSS
 }
 
 .widget-area .widget_categories ul li a {
-  color: #3B3B3B;
+  color: #3b3b3b;
   display: block;
 }
 
@@ -3328,7 +3421,7 @@ Sidebar Widget Area CSS
   position: absolute;
   height: 8px;
   width: 8px;
-  content: '';
+  content: "";
   left: 0;
   top: 8px;
   border-radius: 30px;
@@ -3336,7 +3429,7 @@ Sidebar Widget Area CSS
 
 .widget-area .widget_recent_comments ul li a {
   display: inline-block;
-  color: #3B3B3B;
+  color: #3b3b3b;
 }
 
 .widget-area .widget_recent_comments ul li a:hover {
@@ -3367,7 +3460,7 @@ Sidebar Widget Area CSS
   background: #672fea;
   height: 8px;
   width: 8px;
-  content: '';
+  content: "";
   left: 0;
   top: 8px;
   position: absolute;
@@ -3375,7 +3468,7 @@ Sidebar Widget Area CSS
 }
 
 .widget-area .widget_recent_entries ul li a {
-  color: #3B3B3B;
+  color: #3b3b3b;
   display: block;
 }
 
@@ -3411,7 +3504,7 @@ Sidebar Widget Area CSS
   background: #672fea;
   height: 8px;
   width: 8px;
-  content: '';
+  content: "";
   left: 0;
   top: 8px;
   position: absolute;
@@ -3419,7 +3512,7 @@ Sidebar Widget Area CSS
 }
 
 .widget-area .widget_meta ul li a {
-  color: #3B3B3B;
+  color: #3b3b3b;
   display: block;
 }
 
@@ -3455,7 +3548,7 @@ Sidebar Widget Area CSS
   background: #672fea;
   height: 8px;
   width: 8px;
-  content: '';
+  content: "";
   left: 0;
   top: 8px;
   position: absolute;
@@ -3463,7 +3556,7 @@ Sidebar Widget Area CSS
 }
 
 .widget-area .widget_archive ul li a {
-  color: #3B3B3B;
+  color: #3b3b3b;
   display: block;
 }
 
@@ -3481,7 +3574,7 @@ Sidebar Widget Area CSS
 
 .widget-area .tagcloud a {
   display: inline-block;
-  color: #3B3B3B;
+  color: #3b3b3b;
   font-weight: 400;
   font-size: 14.5px !important;
   font-family: "Cairo";
@@ -3550,7 +3643,7 @@ Footer Area CSS
 
 .single-footer-widget .social-list a:hover {
   background-color: transparent;
-  color: #3B3B3B;
+  color: #3b3b3b;
 }
 
 .single-footer-widget h3 {
@@ -3618,7 +3711,7 @@ Copy Right CSS
 .copy-right-content p {
   font-size: 16px;
   margin-bottom: 0;
-  color: #3B3B3B;
+  color: #3b3b3b;
   font-weight: 600;
 }
 
@@ -3644,8 +3737,8 @@ Go Top CSS
   line-height: 40px;
   opacity: 0;
   visibility: hidden;
-  -webkit-transition: .9s;
-  transition: .9s;
+  -webkit-transition: 0.9s;
+  transition: 0.9s;
   border-radius: 50%;
   border: 1px solid #672fea;
 }
@@ -3678,14 +3771,14 @@ Go Top CSS
 }
 
 .go-top::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   z-index: -1;
-  background: #3B3B3B;
+  background: #3b3b3b;
   opacity: 0;
   visibility: hidden;
   -webkit-transition: 0.5s;
